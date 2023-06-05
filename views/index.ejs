@@ -5,8 +5,11 @@
         <link rel="stylesheet" href="/stylesheets/style.css" />
     </head>
     <body>
-        <div class="board">
+        <main>
             <h1><%= title %></h1>
+            <div class="btn-container">
+                <button>New Message</button>
+            </div>
             <div class="board-wrapper">
                 <% messages.forEach(element => { %>
                 <div class="message-wrapper">
@@ -20,6 +23,6 @@
                 </div>
                 <% }) %>
             </div>
-        </div>
+        </main>
     </body>
 </html>
