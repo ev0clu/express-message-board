@@ -1,16 +1,17 @@
 const express = require('express');
 const router = express.Router();
+const dateFns = require('date-fns');
 
 const messages = [
     {
         text: 'Hi there!',
         user: 'Amando',
-        added: new Date()
+        added: dateFns.format(new Date(), 'MM/dd/yyy HH:mm')
     },
     {
         text: 'Hello World!',
         user: 'Charles',
-        added: new Date()
+        added: dateFns.format(new Date(), 'MM/dd/yyy HH:mm')
     }
 ];
 
