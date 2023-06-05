@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body>
+        <h1><%= title %></h1>
+        <div class="board-wrapper">
+            <% messages.forEach(element => { %>
+            <div class="message-wrapper">
+                <div class="name-date-wrapper">
+                    <p class="name"><%=element.user%></p>
+                    <p class="date"><%=element.added%></p>
+                </div>
+                <p class="text"><%=element.text%></p>
+            </div>
+            <% }) %>
+        </div>
+    </body>
 </html>
