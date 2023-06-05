@@ -1,7 +1,7 @@
 {
     "root": true,
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": 12,
         "sourceType": "module"
     },
     "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
@@ -11,6 +11,5 @@
     },
     "rules": {
         "no-console": "error"
-    },
-    "plugins": ["prettier"]
+    }
 }
