@@ -7,19 +7,21 @@
     <body>
         <main>
             <h1><%= title %></h1>
-            <div class="section-wrapper">
-                <section>
-                    <label for="message">Message</label>
-                    <input type="text" name="message" id="message" />
-                </section>
-                <section>
-                    <label for="author">Author</label>
-                    <input type="text" name="author" id="author" />
-                </section>
-            </div>
-            <div class="btn-container">
-                <button>Submit</button>
-            </div>
+            <form method="POST" action="/new">
+                <div class="section-wrapper">
+                    <section>
+                        <label for="message">Message</label>
+                        <input type="text" name="messageText" id="message" />
+                    </section>
+                    <section>
+                        <label for="author">Author</label>
+                        <input type="text" name="userName" id="user" />
+                    </section>
+                </div>
+                <div class="btn-container">
+                    <button>Submit</button>
+                </div>
+            </form>
         </main>
     </body>
 </html>
