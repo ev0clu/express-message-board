@@ -5,4 +5,5 @@ A simple message board app has built with Node.js and Express.js framework. Expr
 ### Demo: [Link]()
 
 ## Features
-- EJS view engine to render the HTML file.
+
+-   EJS view engine is used to render the HTML file
