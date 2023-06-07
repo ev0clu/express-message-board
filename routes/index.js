@@ -39,8 +39,6 @@ async function getMessage() {
     try {
         const messages = await Message.find();
 
-        console.log('dd:', messages);
-
         const updatedMessages = messages.map((message) => {
             const formattedDate = dateFns.format(message.createdAt, 'MM/dd/yyy HH:mm');
             return {
@@ -49,7 +47,6 @@ async function getMessage() {
                 createdAt: formattedDate
             };
         });
-        console.log('arr:', updatedMessages);
         return updatedMessages;
     } catch (err) {
         console.log(err);
