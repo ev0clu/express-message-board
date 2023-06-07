@@ -13,14 +13,14 @@
                 </div>
             </form>
             <div class="board-wrapper">
-                <% messages.map(element => { %>
+                <% messages.map(message => { %>
                 <div class="message-wrapper">
                     <div class="name-date-wrapper">
-                        <p class="name"><%=element.user%></p>
-                        <p class="date"><%=element.added%></p>
+                        <p class="name"><%=message.user%></p>
+                        <p class="date"><%=message.createdAt%></p>
                     </div>
                     <div class="text-wrapper">
-                        <p class="text"><%=element.text%></p>
+                        <p class="text"><%=message.text%></p>
                     </div>
                 </div>
                 <% }) %>
