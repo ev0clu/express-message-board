@@ -72,6 +72,7 @@ main {
     border: 1px solid #2222;
     border-radius: 20px;
     height: 100%;
+    padding-bottom: 30px;
 }
 
 h1 {
