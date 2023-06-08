@@ -7,7 +7,27 @@ const logger = require('morgan');
 const indexRouter = require('./routes/index');
 const newRouter = require('./routes/new');
 
+const mongoose = require('mongoose');
+require('dotenv').config();
+
 const app = express();
+
+// Set `strictQuery: false` to globally opt into filtering by properties that aren't in the schema
+// Included because it removes preparatory warnings for Mongoose 7.
+// See: https://mongoosejs.com/docs/migrating_to_6.html#strictquery-is-removed-and-replaced-by-strict
+mongoose.set('strictQuery', false);
+
+// Define the database URL to connect to.
+const mongoDB = `mongodb+srv://ev0clu:${process.env.KEY}@cluster0.6ywffwq.mongodb.net/mini_message_board?retryWrites=true&w=majority`;
+
+initMongoDB();
+async function initMongoDB() {
+    try {
+        await mongoose.connect(mongoDB);
+    } catch (err) {
+        console.log(err);
+    }
+}
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
