@@ -9,6 +9,14 @@ A simple message board app has built with Node.js and Express.js framework. Expr
 -   EJS view engine is used to render the DOM
 -   MongoDB uses to store data
 
+## How run from local repository
+
+1. Clone the repository
+2. `npm install`
+3. `npm run start`
+4. Server running at
+   `http://localhost:3000/`
+
 ## Dependencies
 
 -   [Node.js](https://nodejs.org/en)
@@ -20,3 +28,7 @@ A simple message board app has built with Node.js and Express.js framework. Expr
 -   [date-nfs](https://date-fns.org/)
 -   [morgan](https://www.npmjs.com/package/morgan)
 -   [http-errors](https://www.npmjs.com/package/http-errors)
+
+### Layout
+
+![layout picture](https://github.com/ev0clu/express-message-board/blob/main/layout.png?raw=true)
