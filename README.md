@@ -12,10 +12,10 @@ A simple message board app has built with Node.js and Express.js framework. Expr
 ## How run from local repository
 
 1. Clone the repository
-2. `npm install`
-3. `npm run start`
-4. Server running at
-   `http://localhost:3000/`
+2. Run `npm install` command in your terminal
+3. Create .env file and add a new enviromental variable named MONGODB_URL and paste your own mongoDB connection link.
+4. Run `npm run start` command in your terminal
+5. Server running at `http://localhost:3000/`
 
 ## Dependencies
 

@@ -18,7 +18,7 @@ const app = express();
 mongoose.set('strictQuery', false);
 
 // Define the database URL to connect to.
-const mongoDB = `mongodb+srv://ev0clu:${process.env.KEY}@cluster0.6ywffwq.mongodb.net/mini_message_board?retryWrites=true&w=majority`;
+const mongoDB = process.env.MONGODB_URL;
 
 initMongoDB();
 async function initMongoDB() {
